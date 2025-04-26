@@ -26,7 +26,7 @@ spec:
     app: mysql
   spec:
    containers:
-    - image: Henrique-2025/projeto-database:1.0
+    - image: henriquebr/projeto-database:1.0
       args:
       - "--ignore-db-dir=lost+found"
       imagePullPolicy: Always
@@ -63,7 +63,7 @@ spec:
   spec:
    containers:
     - name: php
-      image: henrique-2025/projeto-backend:1.0
+      image: henriquebr/projeto-backend:1.0
       imagePullPolicy: Always
       ports:
       - containerPort: 80
